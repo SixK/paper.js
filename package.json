@@ -14,6 +14,13 @@
     "Jonathan Puckey <jonathan@puckey.studio> (http://studiomoniker.com)"
   ],
   "main": "dist/paper-full.js",
+  "module": "dist/paper-full.js",
+  "exports": {
+    ".": {
+      "import": "./dist/paper-full.js",
+      "require": "./dist/paper-full.js"
+    }
+  },
   "types": "dist/paper.d.ts",
   "scripts": {
     "minify": "gulp minify",
